@@ -52,16 +52,16 @@ floating_modifier $mod
 set $alt Mod1
 
 # start a terminal
-bindsym $mod+Shift+Return exec kitty
-bindsym $mod+Return exec xterm
+bindsym $mod+Shift+Return exec xterm
+bindsym $mod+Return exec urxvt 
 bindsym $mod+w exec google-chrome-stable
 bindsym $mod+$alt+d exec google-chrome discord.com/app
-bindsym $mod+v exec xterm vim
-bindsym $mod+p exec xterm pulsemixer
-bindsym $mod+n exec xterm nmtui
+bindsym $mod+v exec urxvt -e vim
+bindsym $mod+p exec urxvt -e pulsemixer
+bindsym $mod+n exec urxvt -e nmtui
 bindsym $mod+s exec --no-startup-id spotify
-bindsym $mod+Shift+c exec xterm cava
-bindsym $mod+Shift+t exec xterm gotop
+bindsym $mod+Shift+c exec urxvt -e cava
+bindsym $mod+Shift+t exec urxvt -e gotop
 bindsym $mod+$alt+o exec $HOME/.config/i3/picom_toggle.sh
 # kill focused window
 bindsym $mod+Shift+q kill
