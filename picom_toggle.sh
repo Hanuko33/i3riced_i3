@@ -5,7 +5,7 @@ if [ -f $HOME/.config/i3/picom.lock ]; then
     rm $HOME/.config/i3/picom.lock;
     rm $HOME/.config/i3/nohup.out
 else
-    nohup picom &
+    nohup picom --config $HOME/.config/i3/picom.conf &
     touch $HOME/.config/i3/picom.lock;
     rm $HOME/.config/i3/nohup.out
 fi
