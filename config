@@ -36,7 +36,7 @@ exec --no-startup-id nm-applet
 # exec --no-startup-id blueman-applet
 exec --no-startup-id ./.fehbg
 exec --no-startup-id $HOME/.config/i3/picom_toggle.sh
-
+bindsym $mod+Shift+w exec --no-startup-id ./.fehbg
 bindsym $mod+Shift+s exec xfce4-screenshooter
 
 # Use pactl to adjust volume in PulseAudio.
