@@ -57,7 +57,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty tmux 
-bindsym $mod+w exec google-chrome-stable
+bindsym $mod+w exec firefox
 bindsym $mod+n exec kitty nmtui
 bindsym $mod+s exec --no-startup-id spotify
 bindsym $mod+$alt+o exec $HOME/.config/i3/picom_toggle.sh
